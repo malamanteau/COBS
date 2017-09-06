@@ -2,7 +2,9 @@
 
 #include <cstdint>
 
-
+#ifdef COBS_NS
+namespace COBS_NS {
+#endif
 /// \brief A Consistent Overhead Byte Stuffing (COBS) Encoder.
 ///
 /// Consistent Overhead Byte Stuffing (COBS) is an encoding that removes all 0
@@ -105,3 +107,7 @@ public:
 	}
 
 };
+
+#ifdef COBS_NS
+}
+#endif
